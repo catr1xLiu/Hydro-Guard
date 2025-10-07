@@ -88,12 +88,26 @@
     },
     "idf.flashType": "UART",
     "idf.portWin": "COM3",
-    "python.analysis.typeCheckingMode": "strict",
+    // Pylance Type Checking
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoImportCompletions": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit" // or true, depending on version/formatter
-        }
+        },
+        // AutoDocstring Settings
+        "autoDocstring.docstringFormat": "google",
+        "autoDocstring.startOnNewLine": false,
+        "autoDocstring.includeExtendedSummary": true,
+        "autoDocstring.includeName": false,
+        "autoDocstring.guessTypes": true,
+    },
+    // Show docstring on hover
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
     }
 }

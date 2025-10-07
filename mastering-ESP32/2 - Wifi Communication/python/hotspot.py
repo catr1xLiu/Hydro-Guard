@@ -18,7 +18,7 @@ from typing import Optional
 @dataclass
 class HotspotConfig:
     """
-    Configuration for an hotspot access point.
+    Configuration for a hotspot access point.
     """
 
     name: str = "HydroGuard-Test"
@@ -87,6 +87,8 @@ class HotSpot(ABC):
         Obtains the configuration
 
         Returns:
-            :class:`HopSpotConfig` the hotspot configuration
+            HopSpotConfig the hotspot configuration
         """
         return self.config
+
+# TODO: Implement for Windows and Linux
