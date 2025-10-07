@@ -1,0 +1,9 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "Python Web Server for Hydro Guard"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.118.0",
+    "streamlit>=1.50.0",
+]
